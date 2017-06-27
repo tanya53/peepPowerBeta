@@ -1,0 +1,367 @@
+@import 'normalize-scss-6.0.0/sass/normalize';
+@include normalize();
+@import 'constants';
+@import 'navbar';
+@import 'footer';
+html, body {margin:0;
+            padding:0;
+            width:100%;
+            height:100%;
+}
+
+.gamediv {height:500px;
+          padding:0;
+          margin:0;
+          background-color:#ffffff;}
+.bearpng {position:absolute;}
+
+
+@media (min-width: 768px){
+  #rightside{border-left:1px solid $blue;}
+}
+@media (max-width: 768px) {
+  #rightside{border-top:1px solid $blue;}
+}
+//scss for memory game
+body {
+  text-align: center;
+}
+
+@media(min-width:320px) and (max-width:480px){
+  #game {
+    background: red;
+  }
+}
+@media (min-width:480px) and (max-width:768px){
+  #game {
+  background:darkgreen;
+}
+}
+
+@media (min-width:768px){
+  #game {
+    background:yellow;
+  }
+}
+#game {
+  border-radius: 10px;
+  border: 1px solid GRAY;
+  flex-wrap: wrap;
+  margin: -15px -15px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction:row;
+   justify-content: flex-start; //flex-start flex-end center space-between space around
+   align-items: center; //flex-start flex-end center baseline stretch
+   align-content:flex-end; //flex-start flex-end center space-between space-around stretch
+
+}
+
+/* give visual depth to card */
+.card {
+  width: 72px;
+  height: 100px;
+  margin:0px;
+  transition: all .8s;
+  margin: 15px 15px;
+}
+/* cards have 2 faces */
+.face {
+  border-radius: 10px;
+  width: 100%;
+  height:100%;
+  position:absolute;
+  transition-property: opacity, transform, box-shadow;
+  transition-duration: .3s;
+  backface-visibility: hidden;
+}
+/*style front and back of card */
+.front {
+  background: GREY url(../images/matchsprite.jpg) -240px -480px;}
+
+.back {
+  background: LIGHTGREY url(../images/matchsprite.jpg);
+  transform: rotate3d(0,1,0,-180deg);
+}
+.card:hover .face, .card-flipped .face {
+  box-shadow: 0 0 10px #aaa;
+}
+.card-flipped .front {
+  transform: rotate3d(0,1,0,180deg);
+}
+.card-flipped .back {
+  transform: rotate3d(0,1,0,0deg);
+}
+
+.card-removed {
+  opacity: 0;
+}
+
+
+#playagain {
+  display:none;
+  background:blue;
+
+  position:fixed;
+  left: 40px;
+  top: 40px;
+  padding: 30px;
+  border: 3px solid red;
+}
+//offsets for the sprite sheet
+.cardAndre {background-position: 0 0;}
+.cardBuffy {background-position: -80px 0;}
+.cardDraco {background-position: -160px 0;}
+.cardGeorge {background-position: -240px 0;}
+.cardGertrude {background-position: 0 -120px;}
+.cardHillary {background-position: -80px -120px;}
+.cardIsabella {background-position: -160px -120px;}
+.cardKonrad {background-position: -240px -120px;}
+.cardLaLa {background-position: 0 -240px;}
+.cardLauence {background-position: -80px -240px;}
+.cardLeo {background-position: -160px -240px;}
+.cardMartha {background-position: -240px -240px;}
+.cardOliver {background-position: 0 -360px;}
+.cardPatti {background-position: -80px -360px;}
+.cardPeter {background-position: -160px -360px;}
+.cardPetunia {background-position: -240px -360px;}
+.cardPrudence {background-position: 0 -480px;}
+.cardSergio {background-position: -80px -480px;}
+.cardTig {background-position: -160px -480px;}
+
+/* Simon game scss */
+#Simon {margin-top:5%;
+  background-color: #c7eded;
+background-image: url("http://www.transparenttextures.com/patterns/black-linen.png");
+}
+.color {padding: 18% 9% 18% 9%;
+        }
+#green { border-top-left-radius : 100%;
+         background-color:#009933;
+         border-left: 8px solid black;
+         border-top: 8px solid black;
+         border-right:4px solid black;
+         border-bottom:4px solid black;
+         cursor:pointer;
+        }
+#red {border-top-right-radius : 100%;
+      background-color:#e60000;
+      border-right:8px solid black;
+      border-top:8px solid black;
+      border-bottom:4px solid black;
+      border-left: 4px solid black;
+      cursor:pointer;}
+
+#yellow {border-bottom-left-radius:100%;
+      background-color:#ffff00;
+      border-top:4px solid black;
+      border-right:4px solid black;
+      border-bottom:8px solid black;
+      border-left:8px solid black;
+      cursor:pointer;
+}
+#blue {border-bottom-right-radius:100%;
+       background-color:#0000ff;
+       border-top:4px solid black;
+       border-right:8px solid black;
+       border-bottom:8px solid black;
+       border-left: 4px solid black;
+       cursor:pointer;}
+
+#gamecircle {position:absolute;
+             top : 20%;
+             left : 20%;
+             border : 4px solid black;
+             border-radius:100%;
+             background-color : #f2f2f2;
+             width:60%;
+             height:60%;}
+#gametitle {margin-top:10%;
+            font-size:200%;
+            margin-bottom:10%;}
+
+#counter {border:2px solid black;
+          padding: 1% 1% 1% 1%;
+          border-radius:10%;
+          color: #ff0000;
+          font-weight:200%;
+          background-color: #262626;
+          margin-bottom:0%;
+          width:40px;
+          margin-right:0%;
+          margin-left:40%;
+          padding-left:12px;
+
+          }
+#countlabel {font-size:8px;
+               margin-top:2%;
+               margin-right:0%;
+               color:black;}
+#countlabel {margin-left:30%;}
+
+#start {background-color:#ff0000;
+        border : 3px solid #808080;
+        height: 30px;
+        border-radius:50%;
+        margin:0%;
+        margin-left:10%;
+        padding:0% 15% 0% 15%;
+
+}
+#strict{background-color : #ffff00;
+        border: 3px solid #808080;
+        height: 30px;
+        border-radius:50%;
+        margin:0%;
+        padding:0% 15% 0% 15%;
+        font-size: 14px;
+        margin-right:10%;
+        }
+#strict:focus {outline:0;}
+#start:focus {outline:0;}
+.lit { opacity : 0.4;
+       filter : alpha(opacity=40); /* IE8 and earlier */}
+
+/*the on off swtich was modified
+from the code at this site
+https://proto.io/freebies/onoff/ */
+.onoffswitch {
+    position: relative; width: 50px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    margin-top:8%;
+    margin-left:40%;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 7px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "on";
+    padding-left: 0;
+    background-color: #009933; color: #ffffff;
+}
+.onoffswitch-inner:after {
+    content: "off";
+    padding-right: 10px;
+    background-color: #ff0000; color: #ffffff;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 1px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 30px;
+    border: 2px solid #999999; border-radius: 7px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+#win {border: 2px solid black;
+      background-color : #ffffff;
+      padding: 10% 10% 10% 10%;
+      font-size: 20px;
+      visibility:hidden;}
+
+
+/* tic-tac-toe */
+$color : #ffcce6;
+#TicTacToe {background-color:#bfbfbf;
+  margin:5% 5% 5% 5%;}
+.lines {position:absolute;
+        margin-top:3%;
+        width:90%;
+        height:90%;
+}
+.diag1 {margin-top:40%;
+  -moz-transform: rotate(43deg);
+       -o-transform: rotate(43deg);
+  -webkit-transform: rotate(43deg);
+      -ms-transform: rotate(43deg);
+          transform: rotate(43deg);
+      }
+.diag2 {margin-top:40%;
+    -moz-transform: rotate(-43deg);
+       -o-transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+      -ms-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+   }
+.vert1 {margin-top:42%;
+        margin-left:-65%;
+    -moz-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+   }
+.vert2 {margin-top:42%;
+    -moz-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+   }
+.vert3 {margin-top:42%;
+        margin-right:-65%;
+    -moz-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+   }
+.row1 {margin-top:15%;}
+.row2 {margin-top:40%;}
+.row3 {margin-top:68%;}
+.board {background-color : #800040;
+        color:#ffcce6;
+        font-size:30px;
+        }
+.box {padding:10%;
+      cursor: pointer; }
+
+#box4 {border: 1px solid $color;}
+#box1, #box7{border-right: 1px solid $color;
+       border-left: 1px solid $color;}
+#box3, #box5 {border-top:1px solid $color;
+             border-bottom:1px solid $color;}
+.gamestart {position :absolute;
+       margin-top:14%;
+       margin-left:5%;
+       margin-right:0%;
+       border:1px solid white;
+       background-color:black;
+       }
+.outline {border:1px solid blue;
+          margin:10% 10% 5% 10%;
+          padding:5%;}
+.btnpos {margin-left:35%;
+         margin-bottom:5%;}
+.winner{position:absolute;
+        margin-top:14%;
+        margin-left:5%;
+        margin-right:0%;
+        padding : 10%;
+        border:1px solid white;
+        background-color:black;
+        }
+.yesno {margin-left:10%;}
+.junk {margin:5%;
+       padding:5%;
+       background-color:black;
+       border:1px solid white;}

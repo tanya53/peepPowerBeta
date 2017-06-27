@@ -1,0 +1,46 @@
+@import 'normalize-scss-6.0.0/sass/normalize';
+@include normalize();
+@import 'constants';
+@import 'header';
+@import 'navbar';
+@import 'footer';
+
+header {
+  margin-bottom: 3em;
+}
+section {
+  padding-bottom: 3em;
+}
+.thumbnail img {
+  width: 100%;
+}
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.carousel-indicators li {
+  position: relative;
+  left:auto;
+  right:auto;
+  background-color:#000036;
+}
+.carousel-indicators .active{
+  background-color:#87f8c1;
+}
+h3 {
+  color: #87f8c1;
+}
+
+div>p {
+  color: #87f8c1;
+}
+
+.generic-carousel {
+  margin-right:4%;
+  margin-left: 4%;
+}
+section {
+  margin-bottom: 25px;
+}

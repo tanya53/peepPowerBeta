@@ -1,0 +1,42 @@
+@import 'normalize-scss-6.0.0/sass/normalize';
+@include normalize();
+@import 'constants';
+@import 'header';
+@import 'navbar';
+@import 'footer';
+
+/*work around when nav link is on same page, nav was covering */
+@media (max-width:767px){
+  .anchor:before {
+    display:block;
+    content:" ";
+    height:240px;
+    margin-top:-240px;
+    visibility:hidden;
+  }
+}
+@media (min-width:768px) and (max-width:991px){
+  .anchor:before {
+    display:block;
+    content:" ";
+    height:100px;
+    margin-top:-100px;
+    visibility:hidden;
+  }
+}
+
+@media (min-width:992px){
+  .anchor:before {
+    display:block;
+    content:" ";
+    height:140px;
+    margin-top:-140px;
+    visibility:hidden;
+  }
+}
+body {background-color:$green}
+
+canvas {border: 1px solid red;
+          background-color:white;
+        width: 100%;//may need to change this for responsiveness !!!!!!!!
+      }

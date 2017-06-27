@@ -1,0 +1,43 @@
+body {font: 16px times;
+    }
+svg{width:100%;
+    overflow-x:scroll;
+    }
+
+.title {
+  font-size:16px;
+  fill:#00f;
+  text-decoration:underline;
+}
+.axis {font:10px times}
+
+.axislabel {
+  font-size: 16px;
+  fill:#0f0;
+}
+
+.axis path,
+.axis line{
+  fill:none;
+  stroke:grey;
+  shape-rendering:crispEdges;
+}
+/*footer section of chart */
+.details{
+  font-size:14px;
+  color:#0000ff;
+  padding-left:60px;
+}
+.tooltip {
+  position: absolute;
+  text-align: left;
+  width: auto;
+  height: auto;
+  padding: 3px 5px 3px 5px;
+  font: 1em sans-serif;
+  border: 0px;
+  border-radius: 5px;
+  pointer-events: none;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  background-color: lightsteelblue;
+}

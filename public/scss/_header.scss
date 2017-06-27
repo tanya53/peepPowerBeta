@@ -1,0 +1,26 @@
+/* header section */
+.header-top {background-image: url("../images/peepbackground.jpg");
+        background-color: $green;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding:10%;
+        height: 300px;
+        }
+.jumbotron {color: $green;
+    text-align : center;
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom:0px;}
+
+@media screen and (min-width: 768px) {  /* change header size for larger devices */
+  .jumbotron {
+    font-size: 4em;
+  }
+}
+
+.outline {color:$green; /* outlines the letters in black, easier to read */
+          text-shadow:
+          -1px -1px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000,
+          1px 1px 0 #000;}

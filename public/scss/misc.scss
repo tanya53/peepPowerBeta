@@ -1,0 +1,229 @@
+@import 'normalize-scss-6.0.0/sass/normalize';
+@include normalize();
+@import 'constants';
+@import 'navbar';
+@import 'footer';
+html, body {margin:0;
+            padding:0;
+            //width:100%;
+            height:100%;
+}
+
+/* background image */
+.background {
+  background: url("https://static.flickr.com/98/240959910_f45675dc51.jpg") no-repeat;
+  background-size: cover;
+  background-color: $green;
+  background-position: top right;
+  z-index :-1;
+  border: 2px solid $blue;
+}
+
+.headerinfo {color :$green;
+             margin-top:8%;
+             padding-top:5%;
+             text-shadow: 2px 2px #262626}
+/* the three div at the bottom, location, description and wind */
+
+#temp, #temp2 {color:$green;
+            margin-top : 5%;
+            padding-top : 1%;
+            font-size:32px;
+            padding-left:0px;
+            text-align:center;
+}
+
+.icon {color:#ffffcc;
+       padding: 0;
+}
+#location,#location2 {font-size:20px;}
+
+.weather-info {
+  margin:0px;
+  padding:0px;
+}
+
+@media (min-width: 320px){
+  #temp,#temp2 {
+    font-size:1.5em;
+  }
+}
+@media (min-width: 480px){
+  #temp,#temp2 { text-align:left;}
+  #img,#img2 {margin-left:80px;}
+}
+@media(min-width: 768px){
+  #temp,#temp2 {text-align:left;}
+  #img,#img2 {margin-left: 7%;}
+}
+@media(min-width: 992px){
+  #img,#img2 {margin-left: 20%}
+}
+@media(min-width: 1200px){
+  #img,#img2 {margin-left:30%}
+}
+
+/*scss for #where section */
+#map{
+  height:400px;
+  //background-color:blue;
+}
+
+/* pomodoro clock */
+$lightblue : #b3ffff;
+$darkblue : #000099;
+$shadow : #00ccff;
+#clock {background:$lightblue;
+	    color:$darkblue;
+      font-family: cursive,Times,serif;
+    }
+
+
+h1 {
+    text-shadow: 3px 3px $shadow;
+    text-align:center;
+    font-size:400%;
+    padding-bottom:2%;
+}
+
+#timer1, #timer2 {font-family:Times,serif;}
+
+
+#timer1 {text-align:right;
+        }
+
+#chore_time, #rest_time {font-size:200%;}
+
+/* plus minus buttons */
+.btnsign{background-color:$lightblue;
+		     border:none;
+         padding:0;
+         background:none;
+         color:$darkblue;
+         vertical-align:super;}
+
+.btnsign:hover{background-color:$lightblue;
+		     border:none;
+         padding:0;
+         background:none;
+         color:$darkblue;
+         vertical-align:super;}
+.btnsign:focus{background-color:$lightblue;
+		     border:none;
+         padding:0;
+         background:none;
+         color:$darkblue;
+         vertical-align:super;
+         outline:none;}
+
+
+ /*used to fill in the cicle */
+ #load-bar-frame {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        padding: 0px;
+        border: 2px solid $darkblue;
+        margin-top:5%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        }
+
+
+#load-bar {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        }
+
+/*time displayed in the circle*/
+#current_time {
+        color:$darkblue;
+        font-size: 4em;
+        display:block;
+        padding-top:0%;
+        padding-left:27%;
+        font-family :Times,serif;
+      }
+
+#session {
+  font-size:40px;
+  text-align:center;
+  margin-top:25%;
+  margin-bottom:0%;
+  margin-left:28%;
+}
+
+/*** calculator scss ****/
+
+
+#calculator {margin:5% auto auto auto;
+      background-color: #e6e6e6;
+    }
+
+.calcbody {
+background-image: url("http://www.transparenttextures.com/patterns/gray-floral.png");
+border:1px solid black;
+padding: 20px;
+background-color: #4b4f9c;
+/*box-shadow around border*/
+-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4);
+-moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
+ box-shadow : 10px 10px 5px rgba(23,69,88,.5);
+
+/* rounded corners */
+-webkit-border-radius: 12px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+}
+
+/****** top two title rows *******/
+.test6 {color: #ffffff}
+.title {font-style:oblique;
+        font-size:20px;
+        margin-bottom:0%;
+      }
+
+.inputbox {border:1px solid black;
+           border-radius:10px;
+           background-color: #e6e6e6;
+           height:45px;
+           background: -webkit-gradient(linear, left top, left bottom,
+color-stop(0%, white), color-stop(15%, white), color-stop(100%, #cccccc));
+  background: -moz-linear-gradient(top, white 0%, white 55%, #cccccc 130%);
+}
+
+.inputdata {font-size : 20px;
+ }
+
+/*buttons on calculator */
+.nbr_btn {margin-top:10px;
+      margin-right:1%;
+      margin-left:0px;
+      -webkit-border-radius:10px;
+         -moz-border-radius:10px;
+              border-radius:10px;
+      width : 30%;
+    /*box shadow from http://bootdey.com/snippets/view/Full-bootsra-3d-Buttons  */
+    box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 4px 0 0 #adadad, 0 4px 0 1px rgba(0,0,0,0.4), 0 8px 4px 1px rgba(0,0,0,0.5);
+    background-color:#fff;
+
+}
+
+#addbtn {float:right;
+           -webkit-border-radius:10px;
+              -moz-border-radius:10px;
+                   border-radius:10px;
+            width:200% !important;
+            height:80px;
+}
+#acbtn,#cebtn {background-color:#ff5c33 }
+/** four buttons on the far right */
+.bt3 {float:right;
+  width:200% !important;}
+
+/*centers the keys and input on calc. */
+.testme {margin-right:1% !important;}
+.test3 {margin-left:4%;}
+input {margin-left:4%;}

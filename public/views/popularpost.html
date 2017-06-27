@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title class="text-center">Popular Post</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../style/popularpost.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/1e9f243857.js"></script>
+<script src="../script/ajax.js"></script>
+<script src="../script/popularPost.js"></script>
+
+
+</head>
+<body class="container">
+  <header class="jumbotron text-center header-top">
+    <h1 class="outline"> Peep Power</h1>
+    <h2 class="outline"> Popular Post</h2>
+  </header>
+  <!-- navbar need to add sign-in for comments -->
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="310">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span><span class="sr-only">(current)</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#purpose">Purpose of Site</a></li>
+            <li><a href="index.html#history">Peep History</a></li>
+            <li><a href="index.html#meetPeeps">Meet the Peeps</a></li>
+            <li><a href="index.html#peepHeros">Peep Heroes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media<span class="caret"></span><span class="sr-only">(current)</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="photos.html">Photo Albums</a></li>
+            <li><a href="popularpost.html">Peep Popular Post</a></li>
+            <li><a href="blog.html">Ship Log</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="games.html#TicTacToe">Tic-Tac-Toe</a></li>
+            <li><a href="games.html#Simon">Simon</a></li>
+            <li><a href="games.html#Memory">Memory</a></li>
+            <li><a href="games.html#FindOddPeep">Find the extra peep</a></li>
+            <li><a href="games2.html#gettumblers">Gather the Tumblers</a></li>
+            <li><a href="games2.html#slidingTile">Sliding Tile Puzzle</a></li>
+            <li><a href="games3.html#nibbles">Nibbles - Snake game</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Misc. <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="misc.html#clock">Clock</a></li>
+            <li><a href="misc.html#calculator">Calculator</a></li>
+            <li><a href="misc.html#visit">Will the peeps visit?</a></li>
+            <li><a href="misc.html#where">Where are the peeps?</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/tempindex"><span class="glyphicon glyphicon-user">Login/Signup</a></span></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <section class="posts">
+  </section>
+<footer>
+  <div class="row"><!--hidden-sm-down not working !!!!!!!!!!!!!!!!!!!-->
+    <div class="col-xs-2">
+      <img id = "logo" src="../images/logo.jpg" alt="fish logo">
+    </div>
+    <div class="col-xs-10 col-md-5">
+      <p>Mission statement:  To indoctrinate the human race into peepism using a wide assortment of methods
+      including but not limited to fake news, game addiction, social psychology, and the generation of
+      behavioral algorithms.</p>
+    </div>
+    <div class="col-xs-12 col-md-5">
+      <ul>
+        <li> <a href="privacyPolicy.html">privacy policy </a></li>
+        <li> <a href="termsOfUse.html">terms of use</a> </li>
+        <li>Created by: Tanya Gendreau</li>
+        <li> contact: tanyagendreau@gmail.com </li>
+        <li> <a href="https://github.com/tanya53/peep_project_server">source code</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <a class="col-xs-4 col-sm-2" href ="https://facebook.com/tanya.gend"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://github.com/tanya53"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://linkedin.com"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://plus.google.com"><i class="fa fa-google-plus-official fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://freecodecamp.com"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://twitter.com"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+  </div>
+  <div>&copy;2017 - Tanya Gendreau</div>
+</footer>
+</body>
+</html>

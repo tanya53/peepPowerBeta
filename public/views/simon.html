@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title class="text-center">simon</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="style/simon.css">-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/1e9f243857.js"></script>
+<script type ="text/javascript" src="script/simon.js"></script>
+
+
+</head>
+<body class="container-fluid">
+<section class="container-fluid row col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 test">
+  <!-- outer circles with the colors -->
+  <div class="row test1">
+     <div class = "color col-xs-6" id = "green" value="green">
+      <span>&nbsp;</span>
+    </div>
+    <div class = "color col-xs-6" id = "red"  value="red">
+      <span>&nbsp;</span>
+    </div>
+  </div>
+  <div class="row test1">
+    <div class = "color col-xs-6" id ="yellow" value="yellow">
+      <span>&nbsp;</span>
+    </div>
+    <div class = "color col-xs-6" id = "blue" value="blue">
+      <span>&nbsp;</span>
+    </div>
+  </div>
+  </div>
+  <!-- inner circle of game --->
+  <div id ="gamecircle">
+    <div class = "text-center" id ="gametitle">SIMON</div>
+    <div class = "row">
+      <div class="col-xs-4 test3">
+        <div id ="counter">--</div>
+        <p id ="countlabel">COUNT</p>
+      </div>
+      <div class="col-xs-4 test4">
+      <div class="btn-box">
+        <div class="btn btn-default" id="start"></div>
+        <p id="startlabel">START</p>
+      </div>
+        </div>
+      <div class="btn-box col-xs-4 test5">
+        <div class="btn btn-default" id="strict">&nbsp;&nbsp;</div>
+        <p id="strictlabel">STRICT</p>
+      </div>
+    </div>
+
+    <div class="onoffswitch">
+      <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" >
+      <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+      </label>
+    </div>
+    <div class = "text-center" id = "win"> Congratulations you won !!!</div>
+ </section>
+</body>

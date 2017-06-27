@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title class="text-center">Peep Power - Games</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../style/nibbles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/1e9f243857.js"></script>
+<script src="../script/nibbles.js"></script>
+
+
+</head>
+<body>
+
+<div class="container">
+  <section id="nibbles" class="row anchor">
+    <header>
+      <h2>Nibbles</h2>
+      <p>There are no snakes on peep, so the peeps have no fear of snakes.  They have
+        learned to control the motion of the snake (use the arrow keys) and feed them atomic
+        fireballs (orbs of hot red candy) to keep them from trying to sample a peep.  Unfortunately the atomic fireballs
+        make them grow and at times the sugar high has them running into the wall or themselves,
+        which will cause them to pass out.  The purple pest has invaded level three to annoy the snakes.
+        Puprple pests were stowaways on the peepmobile, the peeps consider them to be nuisance, but they can
+        immobilize the snake if they hit it in the head.  The peeps are worried that the human species
+        would be terrified if the pests become more wide spread and the peeps are worried their covert
+        operation would be discovered.
+      </p>
+    </header>
+    <div id="nibbler" class="container">
+    </div>
+    <!-- Modal -->
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog" aria-labelledby = "game ended" aria-hidden="true">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button id = "modalBtn" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Your snake has passed out!</h4>
+            </div>
+            <div class="modal-body">
+              <p> You hit <span id = passedout></span></p>
+              <p>Close the modal to continue. </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    <button id = "level1" class = "btn" >level 1</button>
+    <button id = "level2" class = "btn" >level 2</button>
+    <button id = "level3" class = "btn" >level 3</button>
+  </section>
+  </div>
+
+</body>
+</html>

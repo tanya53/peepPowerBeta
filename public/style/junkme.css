@@ -1,0 +1,69 @@
+.band {
+  width: 90%;
+  max-width:1240px;
+  margin: 0 auto;
+  display : grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; /*default */
+  grid-gap:20px; /* gutters */
+}
+@media only screen and (min-width: 500px) {
+  .band {
+    grid-template-columns: 1fr 1fr;
+  }
+  .item-1 {
+      grid-column: 1/ span 2;
+
+  }
+}
+@media only screen and (min-width: 850px) {
+  .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* or repeat(4, 1fr) */
+  }
+}
+.card {
+  background: white;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display:flex; /* align columns */
+  flex-direction:column;
+  min-height: 100%;
+  position: relative;
+  top:0;
+  transition: all .1s ease-in;
+}
+.card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+.car article {padding: 20px;}
+
+.card h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+.card p {
+  line-height: 1.4;
+}
+.card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+.card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+}
+.card article {
+  padding: 20px;
+  flex: 1;/* cover all available space */
+  display: flex; /*this is also a flex container handles the vertical spacing in the box */
+  flex-direction: column;
+  justify-content: space-between;
+}

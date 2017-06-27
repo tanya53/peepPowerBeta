@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title class="text-center">Peep Power - Games</title>
+<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../style/nibbles.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/1e9f243857.js"></script>
+<script src="../script/nibbles.js"></script>
+
+
+</head>
+<body >
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="300">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span><span class="sr-only">(current)</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html#purpose">Purpose of Site</a></li>
+            <li><a href="index.html#history">Peep History</a></li>
+            <li><a href="index.html#meetPeeps">Meet the Peeps</a></li>
+            <li><a href="index.html#peepHeros">Peep Heroes</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media<span class="caret"></span><span class="sr-only">(current)</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="photos.html">Photo Albums<span class="sr-only">(current)</span></a></li>
+            <li><a href="popularpost.html">Peep Popular Post</a></li>
+            <li><a href="blog.html">Ship Log</a></li>
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="games.html#TicTacToe">Tic-Tac-Toe</a></li>
+            <li><a href="games.html#Simon">Simon</a></li>
+            <li><a href="games.html#Memory">Memory</a></li>
+            <li><a href="games.html#FindOddPeep">Find the extra peep</a></li>
+            <li><a href="games2.html#gettumblers">Gather the Tumblers</a></li>
+            <li><a href="games2.hteml#slidingTile">Sliding Tile Puzzle</a></li>
+            <li><a href="#nibbles">Nibbles - Snake game</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Misc. <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="misc.html#clock">Clock</a></li>
+            <li><a href="misc.html#calculator">Calculator</a></li>
+            <li><a href="misc.html#visit">Will the peeps visit?</a></li>
+            <li><a href="misc.html#where">Where are the peeps?</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/tempindex"><span class="glyphicon glyphicon-user">Login/Signup</a></span></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <section id="nibbles" class="row anchor">
+    <header>
+        <h2>Nibbles</h2>
+        <p>There are no snakes on peep, so the peeps have no fear of snakes.  They have
+          learned to control the motion of the snake (use the arrow keys) and feed them atomic
+          fireballs (orbs of hot red candy) to keep them from trying to sample a peep.  Unfortunately the atomic fireballs
+          make them grow and at times the sugar high has them running into the wall or themselves,
+          which will cause them to pass out.  The purple pest has invaded level three to annoy the snakes.
+          Puprple pests were stowaways on the peepmobile, the peeps consider them to be nuisance, but they can
+          immobilize the snake if they hit it in the head.  The peeps are worried that the human species
+          would be terrified if the pests become more wide spread and the peeps are worried their covert
+          operation would be discovered.
+        </p>
+      </header>
+      <div id="nibbler" class="container">
+      </div>
+
+        <div class="modal fade" id="NibblesModal" role="dialog" aria-labelledby = "game ended" aria-hidden="true">
+          <div class="modal-dialog">
+
+            <div class="modal-content">
+              <div class="modal-header">
+                <button id = "nibModalBtn" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Your snake has passed out!</h4>
+              </div>
+              <div class="modal-body">
+                <p> You hit <span id = passedout></span></p>
+                <p>Close the modal to continue. </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      <button id = "level1" class = "btn" >level 1</button>
+      <button id = "level2" class = "btn" >level 2</button>
+      <button id = "level3" class = "btn" >level 3</button>
+    </section>
+  </div>
+
+<footer>
+  <div class="row">
+    <div class="col-xs-2">
+      <img id = "logo" src="../images/logo.jpg" alt="fish logo">
+    </div>
+    <div class="col-xs-10 col-md-5">
+      <p>Mission statement:  To indoctrinate the human race into peepism using a wide assortment of methods
+      including but not limited to fake news, game addiction, social psychology, and the generation of
+      behavioral algorithms.</p>
+    </div>
+    <div class="col-xs-12 col-md-5">
+      <ul>
+        <li> <a href="privacyPolicy.html">privacy policy </a></li>
+        <li> <a href="termsOfUse.html">terms of use</a> </li>
+        <li>Created by: Tanya Gendreau</li>
+        <li> contact: tanyagendreau@gmail.com </li>
+        <li> <a href="https://github.com/tanya53/peep_project_server">source code</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <a class="col-xs-4 col-sm-2" href ="https://facebook.com/tanya.gend"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://github.com/tanya53"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://linkedin.com"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://plus.google.com"><i class="fa fa-google-plus-official fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://freecodecamp.com"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://twitter.com"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+  </div>
+  <div>&copy;2017 - Tanya Gendreau</div>
+</footer>
+</body>
+</html>

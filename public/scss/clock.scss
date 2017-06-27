@@ -1,0 +1,84 @@
+$lightblue : #b3ffff;
+$darkblue : #000099;
+$shadow : #00ccff;
+#clock {background:$lightblue;
+	    color:$darkblue;
+      font-family: cursive,Times,serif;
+    }
+
+
+h1 {
+    text-shadow: 3px 3px $shadow;
+    text-align:center;
+    font-size:400%;
+    padding-bottom:2%;
+}
+
+#timer1, #timer2 {font-family:Times,serif;}
+
+
+#timer1 {text-align:right;
+        }
+
+#chore_time, #rest_time {font-size:200%;}
+
+/* plus minus buttons */
+.btnsign{background-color:$lightblue;
+		     border:none;
+         padding:0;
+         background:none;
+         color:$darkblue;
+         vertical-align:super;}
+
+.btnsign:hover{background-color:$lightblue;
+		     border:none;
+         padding:0;
+         background:none;
+         color:$darkblue;
+         vertical-align:super;}
+.btnsign:focus{background-color:$lightblue;
+		     border:none;
+         padding:0;
+         background:none;
+         color:$darkblue;
+         vertical-align:super;
+         outline:none;}
+
+
+ /*used to fill in the cicle */
+ #load-bar-frame {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        padding: 0px;
+        border: 2px solid $darkblue;
+        margin-top:5%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        }
+
+
+#load-bar {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        }
+
+/*time displayed in the circle*/
+#current_time {
+        color:$darkblue;
+        font-size: 4em;
+        display:block;
+        padding-top:0%;
+        padding-left:27%;
+        font-family :Times,serif;
+      }
+
+#session {
+  font-size:40px;
+  text-align:center;
+  margin-top:25%;
+  margin-bottom:0%;
+  margin-left:28%;
+}

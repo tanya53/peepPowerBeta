@@ -1,0 +1,20 @@
+{
+  "name": "peep_project",
+  "authors": [
+    "tanya53 <tgendreau@centurytel.net>"
+  ],
+  "description": "peeps web site",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

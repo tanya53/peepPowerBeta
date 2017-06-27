@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title class="text-center">Peep Power- home</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style/clock.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/1e9f243857.js"></script>
+<script src="script/clock.js"></script>
+
+</head>
+<body class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Pomodoro Clock</h1>
+    </div>
+  </div><!--row-->
+  <div class="row"> <!-- counters -->
+	  <!-- rest time -->
+	  <div class="col-xs-6" id= "timer1">
+	    <p>REST TIME</p>
+       <button class="btn btn-default btn-xs btnsign" id ="decrease_rest">
+          <span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+        <span id="rest_time">1</span>
+        <button id = "increase_rest" class="btn btn-default btn-xs btnsign">
+         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+	  </div>
+
+
+       <!-- chore time -->
+	  <div class="col-xs-6" id= "timer2">
+	   <p id = "testme">CHORE TIME</p>
+       <button id = "decrease_chore" class="btn btn-default btn-xs btnsign">
+          <span class="glyphicon glyphicon-minus" aria-hidden="true"></span></button>
+        <span id="chore_time">1</span>
+        <button id = "increase_chore" class="btn btn-default btn-xs btnsign">
+         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></button>
+	 </div>
+   </div>
+   <div class="row">
+    	<!-- circle for clock -->
+      <div  class="center-block" id="load-bar-frame">
+        <div id="load-bar">
+          <span id="session">Session</span>
+         <span id="current_time"></span></div>
+      </div>
+    </div>
+  </div>
+
+</body> <!-- container  -->
+</html>

@@ -1,0 +1,43 @@
+body{margin:0px;
+     padding:0px;}
+svg {
+  fill: #eee;
+}
+
+.sphere {
+  fill: #99ffff;
+}
+
+.land {
+  fill: #66cc99;
+}
+
+.boundary {
+  fill: none;
+  stroke: #339966;
+  stroke-width:1px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.tooltip {
+  position:absolute;
+  width:auto;
+  height:auto;
+  pointer-events:none;
+  text-align:left;
+  padding:2px;
+  border:1px solid black;
+  border-radius:5px;
+  background-color:#e6f2ff;
+  color:#000000;
+}
+.legend {font-size:8px;
+         fill:#000;
+         }

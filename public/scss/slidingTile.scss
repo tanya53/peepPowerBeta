@@ -1,0 +1,31 @@
+@import 'normalize-scss-6.0.0/sass/normalize';
+@include normalize();
+@import 'constants';
+body {background-color:$green}
+.numbers {
+  fill:#000000;
+  font-family :"Verdana";
+  font-size:45px;
+  width:100px;
+  height:100px;
+}
+.tile {
+  fill:#00e6e6;
+  stroke:#009999;
+  stroke-width:5;
+  fill-opacity:0.3;}
+.blankTile {
+  stroke:#009999;
+  stroke-width:5;
+  width:100;
+  height:100;
+  fill:#009999;
+}
+svg{
+  margin-right:25%;
+  margin-left:25%;
+}
+//<text " x="35" y="60" >
+//1</text>
+//<rect stroke ="#000099" stroke-width="5" width="100" height="100" x="0" y="0"
+// rx="20" ry="20"  fill ="#00e6e6" opacity =".3" />

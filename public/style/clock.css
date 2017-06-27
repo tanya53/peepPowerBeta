@@ -1,0 +1,78 @@
+#clock {
+  background: #b3ffff;
+  color: #000099;
+  font-family: cursive,Times,serif; }
+
+h1 {
+  text-shadow: 3px 3px #00ccff;
+  text-align: center;
+  font-size: 400%;
+  padding-bottom: 2%; }
+
+#timer1, #timer2 {
+  font-family: Times,serif; }
+
+#timer1 {
+  text-align: right; }
+
+#chore_time, #rest_time {
+  font-size: 200%; }
+
+/* plus minus buttons */
+.btnsign {
+  background-color: #b3ffff;
+  border: none;
+  padding: 0;
+  background: none;
+  color: #000099;
+  vertical-align: super; }
+
+.btnsign:hover {
+  background-color: #b3ffff;
+  border: none;
+  padding: 0;
+  background: none;
+  color: #000099;
+  vertical-align: super; }
+
+.btnsign:focus {
+  background-color: #b3ffff;
+  border: none;
+  padding: 0;
+  background: none;
+  color: #000099;
+  vertical-align: super;
+  outline: none; }
+
+/*used to fill in the cicle */
+#load-bar-frame {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  padding: 0px;
+  border: 2px solid #000099;
+  margin-top: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+#load-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%; }
+
+/*time displayed in the circle*/
+#current_time {
+  color: #000099;
+  font-size: 4em;
+  display: block;
+  padding-top: 0%;
+  padding-left: 27%;
+  font-family: Times,serif; }
+
+#session {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 25%;
+  margin-bottom: 0%;
+  margin-left: 28%; }

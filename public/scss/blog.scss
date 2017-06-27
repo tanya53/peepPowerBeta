@@ -1,0 +1,17 @@
+@import 'normalize-scss-6.0.0/sass/normalize';
+@include normalize();
+@import 'constants';
+@import 'header';
+@import 'navbar';
+@import 'footer';
+
+@media (min-width : $md-width){
+  .jumbotron {padding-top:5%;
+              }
+}
+
+body {
+  background-color:$blue;
+}
+
+section {background-color:$green;}

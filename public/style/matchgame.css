@@ -1,0 +1,150 @@
+body {
+  text-align: center; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #game {
+    background: red; } }
+
+@media (min-width: 480px) and (max-width: 768px) {
+  #game {
+    background: darkgreen; } }
+
+@media (min-width: 768px) {
+  #game {
+    background: yellow; } }
+
+#game {
+  border-radius: 10px;
+  border: 1px solid GRAY;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px -15px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end; }
+
+/* give visual depth to card */
+.card {
+  width: 72px;
+  height: 100px;
+  margin: 0px;
+  -webkit-transition: all .8s;
+  transition: all .8s;
+  margin: 15px 15px; }
+
+/* cards have 2 faces */
+.face {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition-property: opacity, box-shadow, -webkit-transform;
+  transition-property: opacity, box-shadow, -webkit-transform;
+  transition-property: opacity, transform, box-shadow;
+  transition-property: opacity, transform, box-shadow, -webkit-transform;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden; }
+
+/*style front and back of card */
+.front {
+  background: GREY url(../images/matchsprite.jpg) -240px -480px; }
+
+.back {
+  background: LIGHTGREY url(../images/matchsprite.jpg);
+  -webkit-transform: rotate3d(0, 1, 0, -180deg);
+          transform: rotate3d(0, 1, 0, -180deg); }
+
+.card:hover .face, .card-flipped .face {
+  box-shadow: 0 0 10px #aaa; }
+
+.card-flipped .front {
+  -webkit-transform: rotate3d(0, 1, 0, 180deg);
+          transform: rotate3d(0, 1, 0, 180deg); }
+
+.card-flipped .back {
+  -webkit-transform: rotate3d(0, 1, 0, 0deg);
+          transform: rotate3d(0, 1, 0, 0deg); }
+
+.card-removed {
+  opacity: 0; }
+
+#playagain {
+  display: none;
+  background: blue;
+  position: fixed;
+  left: 40px;
+  top: 40px;
+  padding: 30px;
+  border: 3px solid red; }
+
+.cardAndre {
+  background-position: 0 0; }
+
+.cardBuffy {
+  background-position: -80px 0; }
+
+.cardDraco {
+  background-position: -160px 0; }
+
+.cardGeorge {
+  background-position: -240px 0; }
+
+.cardGertrude {
+  background-position: 0 -120px; }
+
+.cardHillary {
+  background-position: -80px -120px; }
+
+.cardIsabella {
+  background-position: -160px -120px; }
+
+.cardKonrad {
+  background-position: -240px -120px; }
+
+.cardLaLa {
+  background-position: 0 -240px; }
+
+.cardLauence {
+  background-position: -80px -240px; }
+
+.cardLeo {
+  background-position: -160px -240px; }
+
+.cardMartha {
+  background-position: -240px -240px; }
+
+.cardOliver {
+  background-position: 0 -360px; }
+
+.cardPatti {
+  background-position: -80px -360px; }
+
+.cardPeter {
+  background-position: -160px -360px; }
+
+.cardPetunia {
+  background-position: -240px -360px; }
+
+.cardPrudence {
+  background-position: 0 -480px; }
+
+.cardSergio {
+  background-position: -80px -480px; }
+
+.cardTig {
+  background-position: -160px -480px; }

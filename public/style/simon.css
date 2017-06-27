@@ -1,0 +1,197 @@
+#Simon {
+  margin-top: 5%;
+  background-color: #c7eded;
+  background-image: url("http://www.transparenttextures.com/patterns/black-linen.png"); }
+
+.color {
+  padding: 18% 9% 18% 9%; }
+
+#green {
+  border-top-left-radius: 100%;
+  background-color: #009933;
+  border-left: 8px solid black;
+  border-top: 8px solid black;
+  border-right: 4px solid black;
+  border-bottom: 4px solid black;
+  cursor: pointer; }
+
+#red {
+  border-top-right-radius: 100%;
+  background-color: #e60000;
+  border-right: 8px solid black;
+  border-top: 8px solid black;
+  border-bottom: 4px solid black;
+  border-left: 4px solid black;
+  cursor: pointer; }
+
+#yellow {
+  border-bottom-left-radius: 100%;
+  background-color: #ffff00;
+  border-top: 4px solid black;
+  border-right: 4px solid black;
+  border-bottom: 8px solid black;
+  border-left: 8px solid black;
+  cursor: pointer; }
+
+#blue {
+  border-bottom-right-radius: 100%;
+  background-color: #0000ff;
+  border-top: 4px solid black;
+  border-right: 8px solid black;
+  border-bottom: 8px solid black;
+  border-left: 4px solid black;
+  cursor: pointer; }
+
+#gamecircle {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  border: 4px solid black;
+  border-radius: 100%;
+  background-color: #f2f2f2;
+  width: 60%;
+  height: 60%; }
+
+#gametitle {
+  margin-top: 10%;
+  font-size: 200%;
+  margin-bottom: 10%; }
+
+#counter {
+  border: 2px solid black;
+  padding: 1% 1% 1% 1%;
+  border-radius: 10%;
+  color: #ff0000;
+  font-weight: 200%;
+  background-color: #262626;
+  margin-bottom: 0%;
+  width: 40px;
+  margin-right: 0%;
+  margin-left: 40%;
+  padding-left: 12px; }
+
+#countlabel, #startlabel, #strictlabel {
+  font-size: 8px;
+  margin-top: 2%;
+  margin-right: 0%;
+  color: black; }
+
+#countlabel {
+  margin-left: 30%; }
+
+#startlabel {
+  margin-left: 22%; }
+
+#strictlabel {
+  margin-left: 10%; }
+
+#start {
+  background-color: #ff0000;
+  border: 3px solid #808080;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0%;
+  margin-left: 15%; }
+
+#strict {
+  background-color: #ffff00;
+  border: 3px solid #808080;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0%;
+  padding: 0% 15% 0% 15%;
+  font-size: 14px; }
+
+.lit {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* IE8 and earlier */ }
+
+/*the on off swtich was modified
+from the code at this site
+https://proto.io/freebies/onoff/ */
+.onoffswitch {
+  position: relative;
+  width: 50px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  margin-top: 8%;
+  margin-left: 40%; }
+
+.onoffswitch-checkbox {
+  display: none; }
+
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 7px; }
+
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  -webkit-transition: margin 0.3s ease-in 0s;
+  transition: margin 0.3s ease-in 0s; }
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 20px;
+  padding: 0;
+  line-height: 20px;
+  font-size: 12px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box; }
+
+.onoffswitch-inner:before {
+  content: "on";
+  padding-left: 10px;
+  background-color: #009933;
+  color: #ffffff; }
+
+.onoffswitch-inner:after {
+  content: "off";
+  padding-right: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  text-align: right; }
+
+.onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 1px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 30px;
+  border: 2px solid #999999;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s ease-in 0s;
+  transition: all 0.3s ease-in 0s; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0; }
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px; }
+
+#win {
+  border: 2px solid black;
+  background-color: #ffffff;
+  padding: 10% 10% 10% 10%;
+  font-size: 20px;
+  visibility: hidden; }
+
+.buttonoff {
+  pointer-events: none; }
+
+.buttonon {
+  pointer-events: auto;
+  cursor: pointer; }

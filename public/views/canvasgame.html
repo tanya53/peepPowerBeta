@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title class="text-center">Peep Power- home</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<style>
+  canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+  }
+  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/1e9f243857.js"></script>
+<script src="script/canvasgame.js"></script>
+
+</head>
+<body onload="startGame()">
+  <button onmousedown = "moveup()" onmouseup ="stopMove()" ontouchstart="moveup()">UP</button>
+  <button onmousedown = "movedown()" onmouseup="stopMove()" ontouchstart="movedown()">Down</button>
+  <button onmousedown = "moveleft()" onmouseup="stopMove()" ontouchstart="moveleft()">left</button>
+  <button onmousedown = "moveright()" onmouseup = "stopMove()" ontouchstart="moveright()">right</button>
+
+
+
+
+</body>
+</html>

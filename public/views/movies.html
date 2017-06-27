@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title class="text-center">Peep Power- movies</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="style/normalize.css">
+<link rel="stylesheet" href="style/index.css">
+<link rel="stylesheet" href="style/movies.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/1e9f243857.js"></script>
+
+</head>
+<body>
+  <header class="jumbotron text-center">
+    <h1 class="outline"> Peep Power</h1>
+  </header>
+  <nav class="navbar navbar-default" data-spy="affix" data-offset-top="197" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#purpose">Purpose of Site</a></li>
+            <li><a href="#philosophy">Philosophy</a></li>
+            <li><a href="#meetPeeps">Meet the Peeps</a></li>
+            <li><a href="#peepHeros">Peep Heroes</a><li>
+          </ul>
+        </li>
+        <li class="dropdown active">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Media<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="photos.html">Photo Albums</a></li>
+            <li><a href="movies.html">Movies</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Games <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="construction.html">Tic-Tac-Toe</a></li>
+            <li><a href="construction.html">Simon</a></li>
+            <li><a href="construction.html">Memory</a></li>
+            <li><a href="construction.html">Catch a Peep</a></li>
+            <li><a href="construction.html">Matching</a></li>
+            <li><a href="construction.html">Find a Peep</a></li>
+            <li><a href="consturciton.html">Draw with a Peep</a><li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Misc. <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#talkToPeep">Talk to a Peep</a></li>
+            <li><a href="dummy.html">Picture with a peep</a></li>
+            <li><a href="dummy.html">Clock</a></li>
+            <li><a href="dummy.html">Calculator</a><li>
+          </ul>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+  <section class="container-fluid">
+    <div class="generic-carousel col-xs-12">
+    <div id="myCarousel" class="carousel slide" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"> </li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+      <!--wrapper -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <!-- may want to add .ogg for better cross brower, check this !!!!!!!-->
+            <video controls preload="none" poster="images/turtleposter.jpg">
+              <source src="images/turtle2video.mp4" type="video/mp4"/>
+              <!--source src="images/turtle2video.ogg" type="video/ogg/ -->
+              Your browser does not support the video tag. Feel free to
+              download video from ........
+            </video>
+        </div>
+        <div class="item">
+          <video controls preload="none" poster="images/mantaposter.jpg">
+            <source src="images/manta.mp4" type="video/mp4"/>
+            Your browser does not support the video tag. Feel free to
+            download video from .........
+          </video>
+        </div>
+        <div class="item">
+          <video controls preload="none" poster="images/parrotfishPoster.jpg">
+            <source src="images/parrotfishvideo.mp4" type="video/mp4"/>
+            Your browser does not support the video tag. Feel free to
+            download video from .......
+          </video>
+        </div>
+        <div class="item" >
+          <video controls preload="none" poster="images/fishposter.jpg">
+            <source src="images/fish.mp4" type ="video/mp4">
+            Your browser does not support the video tag. Feel free to
+            download video from .......
+          </video>
+        </div>
+        </div>
+      </div>
+<!--
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>-->
+    </div>
+  </section>
+<footer>
+  <div class="row"><!--hidden-sm-down not working !!!!!!!!!!!!!!!!!!!-->
+    <div class="col-xs-2">
+      <img src="images/logo.jpg" alt="fish logo">
+    </div>
+    <div class="col-xs-10 col-md-5">
+      <p>Mission statement:  To indoctrinate the human race into peepism using a wide assortment of methods
+      inculding but not limited to fake news, game addiction, social psychology, and the creation of
+      behavioral algorithms.</p>
+    </div>
+    <div class="col-xs-12 col-md-5">
+      <ul>
+        <li> <a href="privacyPolicy.html">privacy policy </a></li>
+        <li> <a href="termsOfUse.html">terms of use</a> </li>
+        <li> contact: tanyagendreau@gmail.com </li>
+        <li> <a href="https://github.com/tanya53/votingAPP">source code</a></li>
+    </div>
+  </div>
+  <div class="row">
+    <a class="col-xs-4 col-sm-2" href ="https://facebook.com"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://github.com"><i class="fa fa-github fa-3x" aria-hidden="true"></i><a>
+    <a class="col-xs-4 col-sm-2" href="https://linkedin.com"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://plus.google.com"><i class="fa fa-google-plus-official fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://freecodecamp.com"><i class="fa fa-free-code-camp fa-3x" aria-hidden="true"></i></a>
+    <a class="col-xs-4 col-sm-2" href="https://twitter.com"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+  </div>
+</footer>
+</body>
+</html>

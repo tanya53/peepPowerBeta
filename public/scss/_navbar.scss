@@ -1,0 +1,50 @@
+/* navbar */
+nav {
+  z-index:100;
+}
+/* top navbar */
+.nav.navbar-nav li a { /*nav bar selection */
+  color: $blue;
+}
+
+.nav.navbar-nav li a:hover {
+  background-color:$green;
+}
+li.active {
+  background-color: $green;
+}
+.nav.navbar-nav > .active  > a{ /*changes color of nav-bar top active */
+  background-color: $green;
+}
+.nav.navbar-nav .dropdown.open .dropdown-toggle{ /* nav bar with dropdown */
+  background-color: $green;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: $blue;
+}
+.navbar-header .navbar-toggle{
+  background-color: $green;
+}
+.navbar-header .navbar-toggle.collapsed {
+  background-color:$green;
+}
+.affix {
+  top:0;
+  width:100%
+}
+.affix + .container-fluid {
+  padding-top: 70px;
+}
+
+/* meet the peeps accoridan */
+.panel {
+  background-color: $green;
+  color: $blue;
+  border: 1px solid $blue;
+}
+
+.panel-default > .panel-heading {
+  background-color:$blue;
+  color:$green;
+}

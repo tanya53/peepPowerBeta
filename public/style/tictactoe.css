@@ -1,0 +1,100 @@
+body {
+  background-color: #bfbfbf;
+  margin: 5% 5% 5% 5%; }
+
+.lines {
+  position: absolute;
+  margin-top: 3%;
+  width: 90%;
+  height: 90%; }
+
+.diag1 {
+  margin-top: 40%;
+  -webkit-transform: rotate(43deg);
+  transform: rotate(43deg); }
+
+.diag2 {
+  margin-top: 40%;
+  -webkit-transform: rotate(-40deg);
+  transform: rotate(-40deg); }
+
+.vert1 {
+  margin-top: 42%;
+  margin-left: -65%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.vert2 {
+  margin-top: 42%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.vert3 {
+  margin-top: 42%;
+  margin-right: -65%;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.row1 {
+  margin-top: 15%; }
+
+.row2 {
+  margin-top: 40%; }
+
+.row3 {
+  margin-top: 68%; }
+
+.board {
+  background-color: #800040;
+  color: #ffcce6;
+  font-size: 30px; }
+
+.box {
+  padding: 10%;
+  cursor: pointer; }
+
+#box4 {
+  border: 1px solid #ffcce6; }
+
+#box1, #box7 {
+  border-right: 1px solid #ffcce6;
+  border-left: 1px solid #ffcce6; }
+
+#box3, #box5 {
+  border-top: 1px solid #ffcce6;
+  border-bottom: 1px solid #ffcce6; }
+
+.gamestart {
+  position: absolute;
+  margin-top: 14%;
+  margin-left: 5%;
+  margin-right: 0%;
+  border: 1px solid white;
+  background-color: black; }
+
+.outline {
+  border: 1px solid blue;
+  margin: 10% 10% 5% 10%;
+  padding: 5%; }
+
+.btnpos {
+  margin-left: 35%;
+  margin-bottom: 5%; }
+
+.winner {
+  position: absolute;
+  margin-top: 14%;
+  margin-left: 5%;
+  margin-right: 0%;
+  padding: 10%;
+  border: 1px solid white;
+  background-color: black; }
+
+.yesno {
+  margin-left: 10%; }
+
+.junk {
+  margin: 5%;
+  padding: 5%;
+  background-color: black;
+  border: 1px solid white; }
